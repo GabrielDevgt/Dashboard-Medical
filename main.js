@@ -10,10 +10,10 @@ const dbPath = path.join(dbFolder, 'policlinica.db');
 
 function createWindow() {
     const win = new BrowserWindow({
-        width: 900,
-        height: 600,
-        minWidth: 900,
-        minHeight: 500,
+    width: 1280,
+    height: 720,
+    minWidth: 800,  // Ancho mínimo donde el navbar sigue siendo usable
+    minHeight: 600,
         autoHideMenuBar: true,
          webPreferences: {
             preload: path.join(__dirname, 'preload.js'),
